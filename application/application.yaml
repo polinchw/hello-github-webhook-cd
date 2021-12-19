@@ -4,9 +4,9 @@
 #
 apiVersion: argoproj.io/v1alpha1
 kind: Application
-name: hello-github-webhook
-namespace: argocd
 metadata:
+  name: hello-github-webhook
+  namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/git-branch: dev
     argocd-image-updater.argoproj.io/image-list: myalias=polinchw/hello-github-webhook:dev
