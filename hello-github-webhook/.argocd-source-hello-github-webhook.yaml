@@ -4,5 +4,5 @@ helm:
     value: polinchw/hello-github-webhook
     forcestring: true
   - name: image.tag
-    value: 2.0.0
+    value: 3.0.0
     forcestring: true
