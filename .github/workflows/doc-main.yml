@@ -1,4 +1,4 @@
-name: Docker Image CI for Main
+name: Document change log
 
 on:
   push:
