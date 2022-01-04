@@ -2,7 +2,7 @@ name: Document change log
 
 on:
   push:
-    branches: [ * ]
+    branches: [ main ]
 
 jobs:
   document_changelog:
