@@ -8,8 +8,8 @@ metadata:
   name: hello-github-webhook
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/git-branch: dev
-    argocd-image-updater.argoproj.io/image-list: myalias=polinchw/hello-github-webhook:dev
+    argocd-image-updater.argoproj.io/git-branch: dev-29
+    argocd-image-updater.argoproj.io/image-list: myalias=polinchw/hello-github-webhook:dev-29
     argocd-image-updater.argoproj.io/myalias.update-strategy: digest
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
 spec:
@@ -17,7 +17,7 @@ spec:
   source:
     repoURL: 'https://github.com/polinchw/hello-github-webhook-cd.git'
     path: hello-github-webhook
-    targetRevision: dev
+    targetRevision: dev-29
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: hello-github-webhook
