@@ -4,5 +4,5 @@ helm:
     value: polinchw/hello-github-webhook
     forcestring: true
   - name: image.tag
-    value: sha256:fa7c393fdffd79506b2b0ae7bdca0d3f2a139fe1ff45c860b4d9fa81245ff9d8
+    value: sha256:539f5d213ef0fa36540df0d042ea730bf5b23763231a9bdbd65297677c0235b9
     forcestring: true
