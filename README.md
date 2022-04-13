@@ -21,6 +21,7 @@ kubectl -n argocd create secret generic git-creds --from-literal=username=polinc
 
 ### Instructions
 
++ Install ArgoCD.
 + Install the ArgoCD Image Updater.
 + Install the secret.
 + Branch this project for dev-# version you want to test with.
