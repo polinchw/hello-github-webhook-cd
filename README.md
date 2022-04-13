@@ -4,6 +4,13 @@
 
 This project contains a Helm chart for Argo CD to deploy [hello-github-webhook](https://github.com/polinchw/hello-github-webhook) to Kubernetes.
 
+## Install ArgoCD:
+
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.3.3/manifests/install.yaml
+```
+
 ## Install ArgoCD Image updater:
 
 ```
