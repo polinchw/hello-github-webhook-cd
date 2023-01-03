@@ -1,0 +1,28 @@
+autoxImage: iter8/autox:0.10
+triggers: []
+
+chartGroups:
+  httpbin:
+    trigger:
+      name: hello-hello-github-webhook
+      namespace: default
+      group: apps
+      version: v1
+      resource: deployment
+      releaseSpec:
+        - name: iter8
+          values:
+            tasks: {ready,http,assess}
+            ready:
+              deploy: hello-hello-github-webhook
+              service: hello-hello-github-webhook
+              timeout: 60s
+              http:
+                url: http://hello-hello-github-webhook.default/hello
+            assess:
+              SLOs:
+                upper:
+                  http/latency-mean: 50 
+                  http/error-count: 0
+            runner: job
+            version: 0.12.2

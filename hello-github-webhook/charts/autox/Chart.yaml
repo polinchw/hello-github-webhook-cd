@@ -1,0 +1,18 @@
+apiVersion: v2
+appVersion: v0.10
+description: Automatically launch Iter8 experiments in Kubernetes
+home: https://iter8.tools
+icon: https://github.com/iter8-tools/iter8/raw/master/mkdocs/docs/images/favicon.png
+keywords:
+- Iter8
+- experiment
+- auto launch
+maintainers:
+- email: spartha@us.ibm.com
+  name: Srinivasan Parthasarathy
+  url: https://researcher.watson.ibm.com/researcher/view.php?person=us-spartha
+name: autox
+sources:
+- https://github.com/iter8-tools/iter8
+type: application
+version: 0.1.0
